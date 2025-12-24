@@ -1,0 +1,187 @@
+fileVersion: 1
+id: 187fc49f-0470-4d5f-aa8f-01790ff32014
+name: DIM_FLOWER_DETAILS
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e99574f-e5c9-4591-9fef-95739bde46a1
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_FLOWER_DETAILS_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0398da26-7ba3-41f5-8f04-e4c4a6090eb5
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        isChangeTracking: true
+        name: PLANT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93874af1-b38c-435d-9bf8-10d9325568c3
+                stepCounter: d2410e33-c793-4e28-ad01-3b0083ff2c98
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f878c7a-5360-4549-aabb-fc1a57b9157a
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        isBusinessKey: true
+        name: ROOT_DEPT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 14792c98-245e-4b5d-9412-90c864ab55cf
+                stepCounter: d2410e33-c793-4e28-ad01-3b0083ff2c98
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53d5c814-51f0-4803-94ef-15eb9a04f155
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSystemVersion: true
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33bfa5dc-3e80-42c3-8c99-081b22f4f5bc
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemCurrentFlag: true
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c95fe0e-65db-4ed0-9a43-9deebf61a526
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemStartDate: true
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6aea7b33-4ff4-46c5-b2db-2cf91812051d
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemEndDate: true
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f25af4b3-001f-4e96-969a-6283a7822fbe
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f256e242-35f1-4d23-baa5-a6534a4ca69c
+          stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_FLOWER_DETAILS: d2410e33-c793-4e28-ad01-3b0083ff2c98
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: STG_FLOWER_DETAILS
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'STG_FLOWER_DETAILS') }} "STG_FLOWER_DETAILS"
+        name: DIM_FLOWER_DETAILS
+        noLinkRefs: []
+  name: DIM_FLOWER_DETAILS
+  overrideSQL: false
+  schema: ""
+  sqlType: Dimension
+  type: sql
+  version: 1
+type: Node

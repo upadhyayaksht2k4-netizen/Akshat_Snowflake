@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "37"
+mappingDefinitions:
+  FLOWER:
+    database: GARDEN_PLANTS_NEW
+    schema: FLOWER
+  FRUITS:
+    database: GARDEN_PLANTS_NEW
+    schema: FRUITS
+  VEGGIES:
+    database: GARDEN_PLANTS_NEW
+    schema: VEGGIES
+name: DWW_Environment
+type: Environment

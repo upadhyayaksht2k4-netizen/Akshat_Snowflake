@@ -1,0 +1,68 @@
+fileVersion: 1
+id: beaccf0c-6946-4777-9d00-bef099a8c6cb
+name: STG_VEGETABLE_DETAILS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4004eafb-a15b-4251-a17b-cf95c6a897d9
+          stepCounter: beaccf0c-6946-4777-9d00-bef099a8c6cb
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: PLANT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 180d523e-b1c1-475c-bc2f-6c3b05f3dcc9
+                stepCounter: a104400d-e4be-4b02-8b85-c7f6241ad168
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4cddf50c-9189-45ee-9a66-7b506d82da87
+          stepCounter: beaccf0c-6946-4777-9d00-bef099a8c6cb
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: ROOT_DEPTH_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57af61d9-64e2-4a0f-95c4-768c0d92f209
+                stepCounter: a104400d-e4be-4b02-8b85-c7f6241ad168
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          VEGETABLE_DETAILS: a104400d-e4be-4b02-8b85-c7f6241ad168
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: VEGETABLE_DETAILS
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'VEGETABLE_DETAILS') }} "VEGETABLE_DETAILS"
+        name: STG_VEGETABLE_DETAILS
+        noLinkRefs: []
+  name: STG_VEGETABLE_DETAILS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 79477675-92b5-4f88-8234-44a79b05f082
+name: FRUIT_DETAILS
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: FRUITS
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9cb9985-3ebb-4466-a47b-cfbeec6f80d7
+          stepCounter: 79477675-92b5-4f88-8234-44a79b05f082
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: FRUIT_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 281ad5ac-07b7-4a2a-b5e4-760ab61f4439
+          stepCounter: 79477675-92b5-4f88-8234-44a79b05f082
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: ROOT_DEPT_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: FRUIT_DETAILS
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

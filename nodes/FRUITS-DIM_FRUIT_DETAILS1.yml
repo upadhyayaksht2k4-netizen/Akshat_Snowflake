@@ -1,0 +1,238 @@
+fileVersion: 1
+id: 6d7380c3-9995-42c2-94a1-04f552a371c6
+name: DIM_FRUIT_DETAILS1
+operation:
+  config:
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    customZeroKeyValues:
+      items:
+        - {}
+    deleteStrategy: NO DELETE
+    excludeMergeList:
+      items:
+        - {}
+    excludeMergeToggle: false
+    groupByAll: false
+    insertStrategy: UNION ALL
+    insertZeroKey: false
+    insertZeroKeyAdvanced: false
+    insertZeroKeyBol: "TRUE"
+    insertZeroKeyDate: 01-01-1900
+    insertZeroKeyStr: UNKNOWN
+    insertZeroKeySurrogateKey: "0"
+    insertZeroKeyTimestamp: "1900-01-01 00:00:00.000"
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    primary: false
+    primaryKeyCol:
+      items:
+        - {}
+    primaryKeyName: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: false
+    updateStrategy: MERGE
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: FRUITS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8a1e166-ab94-40ff-b766-1ea778ba93fe
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_FRUIT_DETAILS1_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71e0b06c-e6b5-41c0-b2cb-94106effa4c2
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_FRUIT_DETAILS_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f36b311-a18d-4d5b-aaf0-dc0b42631458
+                stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 761a42ba-e6bc-43ea-8e53-7f5f162fd13e
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        isChangeTracking: true
+        name: FRUIT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84046e95-fff1-4166-8d1e-47bc6235e62c
+                stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11c68f22-dcd4-4b1a-8edc-cb7326e97e51
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        isBusinessKey: true
+        name: ROOT_DEPT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d5cf938-0cd2-4d9a-a1df-b7a1f3bc5918
+                stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66b93aaf-ddc1-4d33-9e98-b28b3ec6d73c
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSystemVersion: true
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 889d0fa7-f040-451e-85fd-de3be6015ff5
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemCurrentFlag: true
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37b40be1-b379-4b38-aff5-84a804de3202
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemStartDate: true
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8850b377-b5a6-4953-a302-23cbc25250c6
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemEndDate: true
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2dc868c-9fc9-447c-bbba-b31bcfe46d5d
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52c72ccc-156c-4613-8e2c-1a3cad0adee4
+          stepCounter: 6d7380c3-9995-42c2-94a1-04f552a371c6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_FRUIT_DETAILS: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: DIM_FRUIT_DETAILS
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'DIM_FRUIT_DETAILS') }} "DIM_FRUIT_DETAILS"
+        name: DIM_FRUIT_DETAILS1
+        noLinkRefs: []
+  name: DIM_FRUIT_DETAILS1
+  overrideSQL: false
+  schema: ""
+  sqlType: advDeploy:::388
+  type: sql
+  version: 1
+type: Node

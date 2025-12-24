@@ -1,0 +1,54 @@
+fileVersion: 1
+id: a9be15a9-86a8-4b84-b079-136f5e135c08
+name: FLOWER_DETAILS
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: FLOWER
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a9c6483-d624-45ca-81d4-71d5827bb467
+          stepCounter: a9be15a9-86a8-4b84-b079-136f5e135c08
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: PLANT_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30677782-8804-4c0a-b356-1253dc8df981
+          stepCounter: a9be15a9-86a8-4b84-b079-136f5e135c08
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: ROOT_DEPT_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: FLOWER_DETAILS
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

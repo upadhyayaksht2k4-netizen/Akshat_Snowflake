@@ -1,11 +1,11 @@
 fileVersion: 1
-id: Dimension
+id: "6"
 isDisabled: false
 metadata:
-  defaultStorageLocation: VEGGIES
+  defaultStorageLocation: null
   error: null
   nodeMetadataSpec: |-
-    capitalized: Dimension
+    capitalized: Copy of Dimension
     short: DIM
     tagColor: '#1E339A'
     plural: Dimensions
@@ -91,5 +91,5 @@ metadata:
       dataType: TIMESTAMP
       placement: end
       attributeName: isSystemUpdateDate
-name: Dimension
+name: Copy of Dimension
 type: NodeType

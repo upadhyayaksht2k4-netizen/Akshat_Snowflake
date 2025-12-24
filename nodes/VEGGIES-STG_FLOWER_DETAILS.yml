@@ -1,0 +1,68 @@
+fileVersion: 1
+id: d2410e33-c793-4e28-ad01-3b0083ff2c98
+name: STG_FLOWER_DETAILS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93874af1-b38c-435d-9bf8-10d9325568c3
+          stepCounter: d2410e33-c793-4e28-ad01-3b0083ff2c98
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: PLANT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a9c6483-d624-45ca-81d4-71d5827bb467
+                stepCounter: a9be15a9-86a8-4b84-b079-136f5e135c08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14792c98-245e-4b5d-9412-90c864ab55cf
+          stepCounter: d2410e33-c793-4e28-ad01-3b0083ff2c98
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: ROOT_DEPT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30677782-8804-4c0a-b356-1253dc8df981
+                stepCounter: a9be15a9-86a8-4b84-b079-136f5e135c08
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FLOWER_DETAILS: a9be15a9-86a8-4b84-b079-136f5e135c08
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: FLOWER
+            nodeName: FLOWER_DETAILS
+        join:
+          joinCondition: FROM {{ ref('FLOWER', 'FLOWER_DETAILS') }} "FLOWER_DETAILS"
+        name: STG_FLOWER_DETAILS
+        noLinkRefs: []
+  name: STG_FLOWER_DETAILS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,54 @@
+fileVersion: 1
+id: a104400d-e4be-4b02-8b85-c7f6241ad168
+name: VEGETABLE_DETAILS
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: VEGGIES
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 180d523e-b1c1-475c-bc2f-6c3b05f3dcc9
+          stepCounter: a104400d-e4be-4b02-8b85-c7f6241ad168
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: PLANT_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57af61d9-64e2-4a0f-95c4-768c0d92f209
+          stepCounter: a104400d-e4be-4b02-8b85-c7f6241ad168
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: ROOT_DEPTH_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: VEGETABLE_DETAILS
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

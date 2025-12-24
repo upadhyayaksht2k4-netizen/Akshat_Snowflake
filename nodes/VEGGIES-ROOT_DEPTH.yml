@@ -1,0 +1,130 @@
+fileVersion: 1
+id: 79bc890a-7d01-4b00-82ff-40f83bef5221
+name: ROOT_DEPTH
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: VEGGIES
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd3db078-afe5-4813-8767-10750002877a
+          stepCounter: 79bc890a-7d01-4b00-82ff-40f83bef5221
+        config: {}
+        dataType: NUMBER(1,0)
+        defaultValue: ""
+        description: ""
+        name: ROOT_DEPTH_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1162662b-eeb6-490b-a1f4-4acfe665e154
+          stepCounter: 79bc890a-7d01-4b00-82ff-40f83bef5221
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: ROOT_DEPTH_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69b7d6e4-cd3e-49ea-b163-c20c9143166c
+          stepCounter: 79bc890a-7d01-4b00-82ff-40f83bef5221
+        config: {}
+        dataType: VARCHAR(7)
+        defaultValue: ""
+        description: ""
+        name: ROOT_DEPTH_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50524887-21fb-4236-8d5f-ea0bc80080d6
+          stepCounter: 79bc890a-7d01-4b00-82ff-40f83bef5221
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: UNIT_OF_MEASURE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f364517-2366-4d09-888c-753cf17db295
+          stepCounter: 79bc890a-7d01-4b00-82ff-40f83bef5221
+        config: {}
+        dataType: NUMBER(2,0)
+        defaultValue: ""
+        description: ""
+        name: RANGE_MIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99fcff6a-1fdb-4456-bf65-a37c5c5b37bf
+          stepCounter: 79bc890a-7d01-4b00-82ff-40f83bef5221
+        config: {}
+        dataType: NUMBER(2,0)
+        defaultValue: ""
+        description: ""
+        name: RANGE_MAX
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: ROOT_DEPTH
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

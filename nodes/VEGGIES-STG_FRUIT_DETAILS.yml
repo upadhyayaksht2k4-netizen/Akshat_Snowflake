@@ -1,0 +1,68 @@
+fileVersion: 1
+id: 728ebed3-a1fb-44a7-a6a8-51f6085ce5da
+name: STG_FRUIT_DETAILS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed43f5e2-d95c-4571-a049-daf1873bd33f
+          stepCounter: 728ebed3-a1fb-44a7-a6a8-51f6085ce5da
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: FRUIT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9cb9985-3ebb-4466-a47b-cfbeec6f80d7
+                stepCounter: 79477675-92b5-4f88-8234-44a79b05f082
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f588ed76-6c4e-43e8-81fa-773b50f7c8b9
+          stepCounter: 728ebed3-a1fb-44a7-a6a8-51f6085ce5da
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: ROOT_DEPT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 281ad5ac-07b7-4a2a-b5e4-760ab61f4439
+                stepCounter: 79477675-92b5-4f88-8234-44a79b05f082
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FRUIT_DETAILS: 79477675-92b5-4f88-8234-44a79b05f082
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: FRUITS
+            nodeName: FRUIT_DETAILS
+        join:
+          joinCondition: FROM {{ ref('FRUITS', 'FRUIT_DETAILS') }} "FRUIT_DETAILS"
+        name: STG_FRUIT_DETAILS
+        noLinkRefs: []
+  name: STG_FRUIT_DETAILS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
