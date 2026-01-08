@@ -1,0 +1,13 @@
+fileVersion: 1
+id: "7"
+isDisabled: false
+metadata:
+  defaultStorageLocation: null
+  error: null
+  nodeMetadataSpec: |-
+    capitalized: TEST
+    short: NEW
+    tagColor: gray
+    plural: New Types
+name: STG_TEST
+type: NodeType
