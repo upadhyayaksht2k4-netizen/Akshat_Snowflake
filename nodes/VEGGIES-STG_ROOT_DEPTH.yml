@@ -15,7 +15,12 @@ operation:
   locationName: VEGGIES
   materializationType: table
   metadata:
-    appliedNodeTests: []
+    appliedNodeTests:
+      - continueOnFailure: true
+        description: ""
+        name: Test
+        runOrder: After
+        templateString: SELECT ROOT_DEPTH_ID, COUNT(*) AS duplicate_count FROM {{ ref('STG_ROOT_DEPTH') }} GROUP BY ROOT_DEPTH_ID HAVING COUNT(*) > 1;
     columns:
       - appliedColumnTests: {}
         columnReference:
