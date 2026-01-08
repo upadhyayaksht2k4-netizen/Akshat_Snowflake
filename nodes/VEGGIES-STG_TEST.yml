@@ -62,7 +62,7 @@ operation:
   name: STG_TEST
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: "7"
   type: sql
   version: 1
 type: Node

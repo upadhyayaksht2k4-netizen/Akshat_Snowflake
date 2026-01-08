@@ -1,0 +1,6 @@
+{% for test in node.tests if config.testsEnabled %}
+{% if test.runOrder == 'Before' %}
+{{ test_stage(test.name, test.continueOnFailure) }}
+{{ test.templateString }}
+{% endif %}
+{% endfor %}
