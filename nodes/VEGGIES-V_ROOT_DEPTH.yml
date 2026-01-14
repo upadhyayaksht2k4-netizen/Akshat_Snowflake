@@ -4,6 +4,8 @@ name: V_ROOT_DEPTH
 operation:
   config:
     insertStrategy: UNION
+    postSQL: ""
+    preSQL: ""
     selectDistinct: false
   database: ""
   deployEnabled: true

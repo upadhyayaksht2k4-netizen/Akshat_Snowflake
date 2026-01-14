@@ -1,0 +1,164 @@
+fileVersion: 1
+id: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+name: FCT_FLOWER_DETAILS
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6532d6b6-c61d-4d94-a9a3-1595e7b70d40
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_FLOWER_DETAILS_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e99574f-e5c9-4591-9fef-95739bde46a1
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e19b7a03-eb30-4280-9ba4-0982ce296c89
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: PLANT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0398da26-7ba3-41f5-8f04-e4c4a6090eb5
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4140e14-b1aa-4cee-b2fd-b64347f385f5
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: ROOT_DEPT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1f878c7a-5360-4549-aabb-fc1a57b9157a
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1261fa29-986e-484e-bb93-ace85e2f9504
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53d5c814-51f0-4803-94ef-15eb9a04f155
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16f94fa0-4bee-470d-ad55-369cea73ad91
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33bfa5dc-3e80-42c3-8c99-081b22f4f5bc
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b11b481b-32bc-41b5-a56c-05ada82ae9aa
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3c95fe0e-65db-4ed0-9a43-9deebf61a526
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19b27072-d899-4ced-9a78-1b76c17d96b6
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6aea7b33-4ff4-46c5-b2db-2cf91812051d
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5df479ec-1da6-43dd-8972-08e8faf7ff50
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f25af4b3-001f-4e96-969a-6283a7822fbe
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d82d659-ab9d-4a11-af0d-4b04ae625178
+          stepCounter: 82bf6067-d4e1-49fe-a2f2-b73c7525c2dd
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f256e242-35f1-4d23-baa5-a6534a4ca69c
+                stepCounter: 187fc49f-0470-4d5f-aa8f-01790ff32014
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_FLOWER_DETAILS: 187fc49f-0470-4d5f-aa8f-01790ff32014
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: DIM_FLOWER_DETAILS
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'DIM_FLOWER_DETAILS') }} "DIM_FLOWER_DETAILS"
+        name: FCT_FLOWER_DETAILS
+        noLinkRefs: []
+  name: FCT_FLOWER_DETAILS
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,187 @@
+fileVersion: 1
+id: bda00a54-0f7c-4cce-966a-696971f52ea9
+name: DIM_STG_TEST
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18e7eb34-36c0-4b53-b379-2fa98cc72bd6
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_STG_TEST_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbdc3301-a39c-4dc9-9374-d0bb2ef6d2be
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: true
+        name: T1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f74db2c-45b3-4405-93da-0b210557bff3
+                stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c3475a1-3574-40cf-b802-4c9822d5dc27
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: NUMBER(2,0)
+        description: ""
+        name: T2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a72e841b-e1af-419a-bc93-c9ed889997f3
+                stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99b8414d-8c1e-44cb-b90f-3280b325c777
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSystemVersion: true
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38924713-74d8-4ce6-9053-bf30a95d4124
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemCurrentFlag: true
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30ef2c71-f2bb-4c4f-884e-2051cbc80388
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemStartDate: true
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8cc0766-d39e-4c1e-957b-9748d9617d72
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemEndDate: true
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cc1d874-85fc-45b8-ae3f-661998af3a25
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cf6c43c-5714-4ffd-97d7-83aee4ef9a3b
+          stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_TEST: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: STG_TEST
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'STG_TEST') }} "STG_TEST"
+        name: DIM_STG_TEST
+        noLinkRefs: []
+  name: DIM_STG_TEST
+  overrideSQL: false
+  schema: ""
+  sqlType: Dimension
+  type: sql
+  version: 1
+type: Node
