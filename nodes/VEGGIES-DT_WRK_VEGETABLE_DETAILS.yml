@@ -21,7 +21,7 @@ operation:
     immutabilityConstraint: false
     immutableExpression: ""
     initialize: ON_CREATE
-    initializeWarehouseSize: X-Small
+    initializeWarehouseSize: Small
     insertStrategy: UNION ALL
     lagSpecification:
       items:
