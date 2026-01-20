@@ -39,8 +39,6 @@ operation:
         config: {}
         dataType: VARCHAR(5)
         description: ""
-        isBusinessKey: true
-        isChangeTracking: true
         name: T1
         nullable: true
         sourceColumnReferences:
@@ -55,6 +53,7 @@ operation:
         config: {}
         dataType: NUMBER(2,0)
         description: ""
+        isBusinessKey: true
         name: T2
         nullable: true
         sourceColumnReferences:

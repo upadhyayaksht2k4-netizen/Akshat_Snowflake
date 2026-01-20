@@ -1,24 +1,23 @@
 fileVersion: 1
-id: e199d23e-bccc-4347-8109-d426ea2184ac
-name: FCT_STG_TEST
+id: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+name: V_STG_TEST
 operation:
   config:
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
+    insertStrategy: UNION
+    selectDistinct: false
   database: ""
   deployEnabled: true
   description: ""
   isMultisource: false
   locationName: VEGGIES
-  materializationType: table
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 29872a59-52e9-458a-84aa-f39fe40f0379
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: c43244d1-d89f-405d-a0f4-eca8c53a5637
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: NUMBER
         description: ""
@@ -31,8 +30,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: db947458-76f4-4e76-91c7-40e2b2354782
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: 57144046-fa5a-4a1e-a73a-3d1f0a035892
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: VARCHAR(5)
         description: ""
@@ -42,11 +41,11 @@ operation:
           - columnReferences:
               - columnCounter: bbdc3301-a39c-4dc9-9374-d0bb2ef6d2be
                 stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
-            transform: "{{even_odd('\"DIM_STG_TEST\".\"t2\"')}}"
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: fd7f6349-b5b8-4cc6-953b-fad224437329
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: 98c9ce6c-7f63-4804-b780-bd9353259799
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: NUMBER(2,0)
         description: ""
@@ -59,8 +58,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d053d968-6635-48d1-ac4c-c28ac3af5692
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: 61ccd55d-5a03-47e3-8629-8f4189b7f9da
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: NUMBER
         description: ""
@@ -73,8 +72,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 390c7069-13ec-47ad-8725-6d426f61ce80
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: db06d420-f857-4018-bd71-9dd0398c40ed
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: VARCHAR
         description: ""
@@ -87,8 +86,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9b0a9970-86c2-4a7e-a3dd-e4d87bc6ec5c
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: 6080c833-500f-4e90-b2de-8e88f7e0497f
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -101,8 +100,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c9a3e930-8634-4da7-99a0-0629c7e1374d
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: 1dfc715c-4d3f-4f2f-b1e0-a14a311f7d05
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -115,8 +114,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0f375a4a-bec3-421c-a46d-fd710254fd4f
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: dea99338-1e0f-4b02-8f1a-6873a1a39328
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -127,23 +126,20 @@ operation:
               - columnCounter: 8cc1d874-85fc-45b8-ae3f-661998af3a25
                 stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
-          columnCounter: 78602ed1-cad2-4e10-a806-a759c0a2c6e7
-          stepCounter: e199d23e-bccc-4347-8109-d426ea2184ac
+          columnCounter: 52d3d3c8-27eb-4ad5-b035-1e2441d190a7
+          stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
         config: {}
         dataType: TIMESTAMP
-        defaultValue: ""
         description: ""
-        isSystemUpdateDate: true
         name: SYSTEM_UPDATE_DATE
         nullable: true
         sourceColumnReferences:
-          - columnReferences: []
-            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - columnReferences:
+              - columnCounter: 8cf6c43c-5714-4ffd-97d7-83aee4ef9a3b
+                stepCounter: bda00a54-0f7c-4cce-966a-696971f52ea9
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -156,12 +152,12 @@ operation:
             nodeName: DIM_STG_TEST
         join:
           joinCondition: FROM {{ ref('VEGGIES', 'DIM_STG_TEST') }} "DIM_STG_TEST"
-        name: FCT_STG_TEST
+        name: V_STG_TEST
         noLinkRefs: []
-  name: FCT_STG_TEST
+  name: V_STG_TEST
   overrideSQL: false
   schema: ""
-  sqlType: Fact
+  sqlType: View
   type: sql
   version: 1
 type: Node

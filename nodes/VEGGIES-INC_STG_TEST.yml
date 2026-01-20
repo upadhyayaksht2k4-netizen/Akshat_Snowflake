@@ -1,0 +1,165 @@
+fileVersion: 1
+id: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+name: INC_STG_TEST
+operation:
+  config:
+    incColumn: ""
+    persistTableLocation: "ex: VEGGIES"
+    persistTableName: "ex: PSTG_STG_TEST"
+    refTable: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa7dcce2-e456-46b0-8819-0e9c6e3aec4d
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: NUMBER
+        description: "Numeric primary key for the dim_stg_test dimension table. Used to uniquely identify each record in the dimension. Referenced by fact tables for reporting and analysis. Enables efficient joins and data retrieval. System-generated surrogate key. No transformations applied. Incremented automatically upon insertion of new records. Facilitates tracking changes and maintaining data integrity. Source: dim_stg_test table."
+        name: DIM_STG_TEST_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c43244d1-d89f-405d-a0f4-eca8c53a5637
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 787e365e-82e7-4234-b0f8-ca38556aa92b
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: T1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57144046-fa5a-4a1e-a73a-3d1f0a035892
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4943d81c-3f00-4822-8b91-f5c1290b5fd2
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: NUMBER(2,0)
+        description: ""
+        name: T2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98c9ce6c-7f63-4804-b780-bd9353259799
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 019cc022-4eb4-4784-ba42-8a79f863e04d
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: NUMBER
+        description: Numeric field sourced from the SYSTEM_VERSION column of the source table. Tracks the version number of each record. Used for auditing and data lineage purposes. No transformations applied. Displayed in data quality reports to monitor data consistency. Aids in identifying and resolving data discrepancies. Part of the key used to join with other tables. Supports detailed analysis of data changes over time.
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61ccd55d-5a03-47e3-8629-8f4189b7f9da
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 816fef7a-2331-4cd9-a0f2-4428b61c8ed6
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: db06d420-f857-4018-bd71-9dd0398c40ed
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e085e71a-51f9-45a1-bcfc-baffd2801af0
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6080c833-500f-4e90-b2de-8e88f7e0497f
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31d7fe7a-baa8-4c67-9111-dfec39f27ce6
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1dfc715c-4d3f-4f2f-b1e0-a14a311f7d05
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78220100-71c0-48fd-882f-ebbc58e1e350
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dea99338-1e0f-4b02-8f1a-6873a1a39328
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea12a1e0-2fed-4695-bfe5-b6fc833b7b97
+          stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52d3d3c8-27eb-4ad5-b035-1e2441d190a7
+                stepCounter: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          V_STG_TEST: 80701ef0-aad9-44b2-8ce1-bef9e48e0331
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: V_STG_TEST
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'V_STG_TEST') }} "V_STG_TEST"
+        name: INC_STG_TEST
+        noLinkRefs: []
+  name: INC_STG_TEST
+  overrideSQL: false
+  schema: ""
+  sqlType: IncrementLoading:::230
+  type: sql
+  version: 1
+type: Node

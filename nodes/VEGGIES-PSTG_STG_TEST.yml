@@ -1,0 +1,182 @@
+fileVersion: 1
+id: 000b77ea-130d-464d-923e-2be414940f48
+name: PSTG_STG_TEST
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c210fe8b-4e95-4ca9-b35a-946871f1bf52
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: PSTG_STG_TEST_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dab4e0bf-58d9-475d-bffc-db748187d26c
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_STG_TEST_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa7dcce2-e456-46b0-8819-0e9c6e3aec4d
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92dfe410-ffdd-48de-8b07-013a2ee9043b
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: T1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 787e365e-82e7-4234-b0f8-ca38556aa92b
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04aafe2f-86f9-4a41-a3fa-8c301d19dddd
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: NUMBER(2,0)
+        description: ""
+        isBusinessKey: true
+        name: T2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4943d81c-3f00-4822-8b91-f5c1290b5fd2
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee6e2aa3-1cb1-46be-9ae9-588d83450772
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 019cc022-4eb4-4784-ba42-8a79f863e04d
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f0f45fc-f98d-40e2-9d12-6c786438aae2
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 816fef7a-2331-4cd9-a0f2-4428b61c8ed6
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4b6edc4-5a93-4dea-aa06-d1b85318df83
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e085e71a-51f9-45a1-bcfc-baffd2801af0
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3f66ec6-9713-478c-8464-0af6979a8538
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 31d7fe7a-baa8-4c67-9111-dfec39f27ce6
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 781b10ae-2b7c-4f26-917f-f51e4ac58b4f
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 78220100-71c0-48fd-882f-ebbc58e1e350
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66baa751-3d19-4c6d-aa41-5385687574b3
+          stepCounter: 000b77ea-130d-464d-923e-2be414940f48
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ea12a1e0-2fed-4695-bfe5-b6fc833b7b97
+                stepCounter: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          INC_STG_TEST: f10d4dfd-7b62-44ce-af1a-16c0db9b6df5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: INC_STG_TEST
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'INC_STG_TEST') }} "INC_STG_TEST"
+        name: PSTG_STG_TEST
+        noLinkRefs: []
+  name: PSTG_STG_TEST
+  overrideSQL: false
+  schema: ""
+  sqlType: persistentStage
+  type: sql
+  version: 1
+type: Node

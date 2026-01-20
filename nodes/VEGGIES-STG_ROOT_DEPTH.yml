@@ -107,7 +107,10 @@ operation:
                 stepCounter: 79bc890a-7d01-4b00-82ff-40f83bef5221
             transform: ""
     cteString: ""
+    description: ""
+    destinationName: ""
     enabledColumnTestIDs: []
+    materializationOption: ""
     sourceMapping:
       - aliases:
           ROOT_DEPTH: 79bc890a-7d01-4b00-82ff-40f83bef5221
@@ -117,7 +120,7 @@ operation:
           - locationName: VEGGIES
             nodeName: ROOT_DEPTH
         join:
-          joinCondition: FROM {{ ref('VEGGIES', 'ROOT_DEPTH') }} "ROOT_DEPTH"
+          joinCondition: FROM {{ ref('VEGGIES', 'ROOT_DEPTH') }} ROOT_DEPTH
         name: STG_ROOT_DEPTH
         noLinkRefs: []
   name: STG_ROOT_DEPTH

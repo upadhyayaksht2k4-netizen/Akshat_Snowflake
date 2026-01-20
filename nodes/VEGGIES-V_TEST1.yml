@@ -1,26 +1,23 @@
 fileVersion: 1
-id: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
-name: STG_TEST
+id: ef424c4a-1b0a-462a-bf1d-484d33c4f5cf
+name: V_TEST1
 operation:
   config:
-    insertStrategy: INSERT
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
+    insertStrategy: UNION
+    selectDistinct: false
   database: ""
   deployEnabled: true
   description: ""
   isMultisource: false
   locationName: VEGGIES
-  materializationType: table
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0f74db2c-45b3-4405-93da-0b210557bff3
-          stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
+          columnCounter: 0da54d5f-d604-4faa-ba31-18ec83b04b3a
+          stepCounter: ef424c4a-1b0a-462a-bf1d-484d33c4f5cf
         config: {}
         dataType: VARCHAR(5)
         description: ""
@@ -28,13 +25,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 149fbdbf-a340-4895-a8c3-4bf7fab30c43
-                stepCounter: b1c1c4bf-1fe9-4648-a944-ae549d9b53c6
+              - columnCounter: 0f74db2c-45b3-4405-93da-0b210557bff3
+                stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a72e841b-e1af-419a-bc93-c9ed889997f3
-          stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
+          columnCounter: f2cb2c0a-51fd-4798-91d1-0e29d971ad73
+          stepCounter: ef424c4a-1b0a-462a-bf1d-484d33c4f5cf
         config: {}
         dataType: NUMBER(2,0)
         description: ""
@@ -42,27 +39,27 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 68c62dbc-8fea-45d7-804c-f5c24c75c43d
-                stepCounter: b1c1c4bf-1fe9-4648-a944-ae549d9b53c6
+              - columnCounter: a72e841b-e1af-419a-bc93-c9ed889997f3
+                stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
-          TEST: b1c1c4bf-1fe9-4648-a944-ae549d9b53c6
+          STG_TEST: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: FRUITS
-            nodeName: TEST
+          - locationName: VEGGIES
+            nodeName: STG_TEST
         join:
-          joinCondition: FROM {{ ref('FRUITS', 'TEST') }} "TEST"
-        name: STG_TEST
+          joinCondition: FROM {{ ref('VEGGIES', 'STG_TEST') }} "STG_TEST"
+        name: V_TEST1
         noLinkRefs: []
-  name: STG_TEST
+  name: V_TEST1
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: View
   type: sql
   version: 1
 type: Node

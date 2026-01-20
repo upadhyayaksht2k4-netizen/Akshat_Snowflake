@@ -1,26 +1,23 @@
 fileVersion: 1
-id: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
-name: STG_TEST
+id: dc5039ab-a0fd-4bf5-a9ad-1f1652a5b559
+name: V_TEST
 operation:
   config:
-    insertStrategy: INSERT
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
+    insertStrategy: UNION
+    selectDistinct: false
   database: ""
   deployEnabled: true
   description: ""
   isMultisource: false
   locationName: VEGGIES
-  materializationType: table
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0f74db2c-45b3-4405-93da-0b210557bff3
-          stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
+          columnCounter: 0bf375e3-755f-4c63-9572-6b53077b8fcf
+          stepCounter: dc5039ab-a0fd-4bf5-a9ad-1f1652a5b559
         config: {}
         dataType: VARCHAR(5)
         description: ""
@@ -33,8 +30,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a72e841b-e1af-419a-bc93-c9ed889997f3
-          stepCounter: 88f9282d-da7f-49a0-a5f3-89c8fdb207eb
+          columnCounter: 9a40ed2e-2b55-4fc4-92f7-32c29514f794
+          stepCounter: dc5039ab-a0fd-4bf5-a9ad-1f1652a5b559
         config: {}
         dataType: NUMBER(2,0)
         description: ""
@@ -57,12 +54,12 @@ operation:
             nodeName: TEST
         join:
           joinCondition: FROM {{ ref('FRUITS', 'TEST') }} "TEST"
-        name: STG_TEST
+        name: V_TEST
         noLinkRefs: []
-  name: STG_TEST
+  name: V_TEST
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: View
   type: sql
   version: 1
 type: Node
