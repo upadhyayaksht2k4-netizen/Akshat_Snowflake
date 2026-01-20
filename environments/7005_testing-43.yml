@@ -10,5 +10,5 @@ mappingDefinitions:
   VEGGIES:
     database: GARDEN_PLANTS1
     schema: VEGGIES
-name: New Environment
+name: 7005_testing
 type: Environment
