@@ -1,5 +1,5 @@
 fileVersion: 1
-id: 40bacb4c-8be6-4ff4-9b84-fef35e631d29
+id: 3d53239d-fc67-427f-8c47-28e0e241e383
 name: STG_ROOT_DEPTH
 operation:
   config:
@@ -10,24 +10,19 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: Staging table for root depth data
   isMultisource: false
   locationName: VEGGIES
   materializationType: table
   metadata:
-    appliedNodeTests:
-      - continueOnFailure: true
-        description: ""
-        name: Test
-        runOrder: After
-        templateString: SELECT ROOT_DEPTH_ID, COUNT(*) AS duplicate_count FROM {{ ref('STG_ROOT_DEPTH') }} GROUP BY ROOT_DEPTH_ID HAVING COUNT(*) > 1;
+    appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a12a69db-6352-456b-93de-926623354cba
-          stepCounter: 40bacb4c-8be6-4ff4-9b84-fef35e631d29
+          columnCounter: 019be4d6-acc6-7578-8030-b5ca639775e1
+          stepCounter: 3d53239d-fc67-427f-8c47-28e0e241e383
         config: {}
-        dataType: NUMBER(1,0)
+        dataType: NUMBER
         description: ""
         name: ROOT_DEPTH_ID
         nullable: true
@@ -38,10 +33,10 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ac126aa3-b8eb-4f45-ac55-35ad0c76f9ea
-          stepCounter: 40bacb4c-8be6-4ff4-9b84-fef35e631d29
+          columnCounter: 019be4d6-acc6-7578-8030-bb2832749222
+          stepCounter: 3d53239d-fc67-427f-8c47-28e0e241e383
         config: {}
-        dataType: VARCHAR(1)
+        dataType: VARCHAR
         description: ""
         name: ROOT_DEPTH_CODE
         nullable: true
@@ -52,10 +47,10 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 48ed5255-5f2f-4ab9-8d66-a656ea369f56
-          stepCounter: 40bacb4c-8be6-4ff4-9b84-fef35e631d29
+          columnCounter: 019be4d6-acc6-7578-8030-bdbdc86f8c94
+          stepCounter: 3d53239d-fc67-427f-8c47-28e0e241e383
         config: {}
-        dataType: VARCHAR(7)
+        dataType: VARCHAR
         description: ""
         name: ROOT_DEPTH_NAME
         nullable: true
@@ -66,10 +61,10 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4db3a4b7-1f0a-4fd7-913b-c67cb950385b
-          stepCounter: 40bacb4c-8be6-4ff4-9b84-fef35e631d29
+          columnCounter: 019be4d6-acc6-7578-8030-c1ec614b67e3
+          stepCounter: 3d53239d-fc67-427f-8c47-28e0e241e383
         config: {}
-        dataType: VARCHAR(2)
+        dataType: VARCHAR
         description: ""
         name: UNIT_OF_MEASURE
         nullable: true
@@ -80,10 +75,10 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 739f15ea-97c0-410f-a87d-7effc230f4da
-          stepCounter: 40bacb4c-8be6-4ff4-9b84-fef35e631d29
+          columnCounter: 019be4d6-acc6-7578-8030-c7a58d630f87
+          stepCounter: 3d53239d-fc67-427f-8c47-28e0e241e383
         config: {}
-        dataType: NUMBER(2,0)
+        dataType: NUMBER
         description: ""
         name: RANGE_MIN
         nullable: true
@@ -94,10 +89,10 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 98c617e1-b5f1-49ba-b18c-cdc2e890db21
-          stepCounter: 40bacb4c-8be6-4ff4-9b84-fef35e631d29
+          columnCounter: 019be4d6-acc6-7578-8030-c8da8901db4e
+          stepCounter: 3d53239d-fc67-427f-8c47-28e0e241e383
         config: {}
-        dataType: NUMBER(2,0)
+        dataType: NUMBER
         description: ""
         name: RANGE_MAX
         nullable: true

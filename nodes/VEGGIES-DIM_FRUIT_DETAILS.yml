@@ -15,10 +15,7 @@ operation:
   metadata:
     appliedNodeTests: []
     columns:
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 2f36b311-a18d-4d5b-aaf0-dc0b42631458
           stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
@@ -31,7 +28,7 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
-            transform: ""
+            transform: ROW_NUMBER() OVER (ORDER BY "STG_FRUIT_DETAILS".FRUIT_NAME)
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 84046e95-fff1-4166-8d1e-47bc6235e62c
@@ -43,8 +40,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: d9cb9985-3ebb-4466-a47b-cfbeec6f80d7
-                stepCounter: 79477675-92b5-4f88-8234-44a79b05f082
+              - columnCounter: ed43f5e2-d95c-4571-a049-daf1873bd33f
+                stepCounter: 728ebed3-a1fb-44a7-a6a8-51f6085ce5da
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -58,13 +55,10 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 281ad5ac-07b7-4a2a-b5e4-760ab61f4439
-                stepCounter: 79477675-92b5-4f88-8234-44a79b05f082
+              - columnCounter: f588ed76-6c4e-43e8-81fa-773b50f7c8b9
+                stepCounter: 728ebed3-a1fb-44a7-a6a8-51f6085ce5da
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: f705bd1f-8e47-40f4-b8d0-1d6363fd9209
           stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
@@ -77,11 +71,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
-            transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+            transform: "1"
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 320d8e6e-416f-467a-8dc2-0e2573654acc
           stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
@@ -94,11 +85,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
-            transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+            transform: "'Y'"
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 1e67a35e-17b5-4ea0-bdf3-0d12225c99dc
           stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
@@ -112,10 +100,7 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: 642b98cc-65ad-40a8-a58b-f1a6f1c5b3ad
           stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
@@ -129,10 +114,7 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: c968b352-4257-4dde-8fa9-301652ac7bd6
           stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
@@ -146,10 +128,7 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
+      - appliedColumnTests: {}
         columnReference:
           columnCounter: abe4f030-0b6d-4e84-a68f-f005f5d5c3c2
           stepCounter: 6e995a23-0d63-4c4d-9817-68598e6c8bb3
@@ -164,7 +143,10 @@ operation:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
     cteString: ""
+    description: ""
+    destinationName: ""
     enabledColumnTestIDs: []
+    materializationOption: ""
     sourceMapping:
       - aliases: {}
         customSQL:

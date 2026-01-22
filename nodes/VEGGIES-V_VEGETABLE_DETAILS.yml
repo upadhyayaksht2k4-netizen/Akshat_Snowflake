@@ -1,0 +1,65 @@
+fileVersion: 1
+id: 7dd217dc-5bb0-42a3-8283-d52b8402e168
+name: V_VEGETABLE_DETAILS
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: VEGGIES
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 320b8f96-85d7-4f64-bda6-8d216373fb22
+          stepCounter: 7dd217dc-5bb0-42a3-8283-d52b8402e168
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: PLANT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4004eafb-a15b-4251-a17b-cf95c6a897d9
+                stepCounter: beaccf0c-6946-4777-9d00-bef099a8c6cb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bcb66349-0b1b-4d94-b56d-69ec1ce6970f
+          stepCounter: 7dd217dc-5bb0-42a3-8283-d52b8402e168
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: ROOT_DEPTH_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4cddf50c-9189-45ee-9a66-7b506d82da87
+                stepCounter: beaccf0c-6946-4777-9d00-bef099a8c6cb
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_VEGETABLE_DETAILS: beaccf0c-6946-4777-9d00-bef099a8c6cb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: STG_VEGETABLE_DETAILS
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'STG_VEGETABLE_DETAILS') }} "STG_VEGETABLE_DETAILS"
+        name: V_VEGETABLE_DETAILS
+        noLinkRefs: []
+  name: V_VEGETABLE_DETAILS
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
