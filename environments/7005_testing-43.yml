@@ -2,13 +2,13 @@ fileVersion: 1
 id: "43"
 mappingDefinitions:
   FLOWER:
-    database: GARDEN_PLANTS1
+    database: GARDEN_PLANTS_NEW
     schema: FLOWER
   FRUITS:
-    database: GARDEN_PLANTS1
+    database: GARDEN_PLANTS_NEW
     schema: FRUITS
   VEGGIES:
-    database: GARDEN_PLANTS1
+    database: GARDEN_PLANTS_NEW
     schema: VEGGIES
 name: 7005_testing
 type: Environment
