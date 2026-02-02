@@ -162,7 +162,7 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
-            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+            transform: CURRENT_DATE()
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
