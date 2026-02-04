@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "3"
+includeSelector: "{ location: FLOWER name: FLOWER_DETAILS } OR { location: VEGGIES name: ROOT_DEPTH } OR { location: VEGGIES name: STG_FLOWER_DETAILS } OR { location: VEGGIES name: STG_FRUIT_DETAILS } OR { location: VEGGIES name: STG_ROOT_DEPTH } OR { location: FRUITS name: DIM_FRUIT_DETAILS1 } OR { location: FRUITS name: FRUIT_DETAILS }"
+name: trial_7250
+type: Job
