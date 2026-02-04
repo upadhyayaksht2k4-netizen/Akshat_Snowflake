@@ -39,7 +39,7 @@ operation:
         config: {}
         dataType: VARCHAR(5)
         description: ""
-        name: T1
+        name: "1"
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -54,7 +54,7 @@ operation:
         dataType: NUMBER(2,0)
         description: ""
         isBusinessKey: true
-        name: T2
+        name: "2"
         nullable: true
         sourceColumnReferences:
           - columnReferences:

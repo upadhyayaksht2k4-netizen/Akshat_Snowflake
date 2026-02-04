@@ -1,0 +1,99 @@
+fileVersion: 1
+id: 7d77dddc-8539-4ffd-815c-3b8f7204b4f7
+name: RCTE_VEGETABLE_DETAILS
+operation:
+  config:
+    anctablename: ""
+    joincol:
+      items:
+        - columnName: null
+          ctecolumnName: null
+    mulsources: false
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: VEGGIES
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e69ebd3d-c7de-4b3c-a648-3aa3cf3aa2c0
+          stepCounter: 7d77dddc-8539-4ffd-815c-3b8f7204b4f7
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: PLANT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 180d523e-b1c1-475c-bc2f-6c3b05f3dcc9
+                stepCounter: a104400d-e4be-4b02-8b85-c7f6241ad168
+            transform: ""
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65e9fa3a-7217-4da9-b011-62dcef1facdb
+          stepCounter: 7d77dddc-8539-4ffd-815c-3b8f7204b4f7
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: ROOT_DEPTH_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57af61d9-64e2-4a0f-95c4-768c0d92f209
+                stepCounter: a104400d-e4be-4b02-8b85-c7f6241ad168
+            transform: ""
+          - columnReferences: []
+            transform: ""
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          VEGETABLE_DETAILS: a104400d-e4be-4b02-8b85-c7f6241ad168
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: VEGGIES
+            nodeName: VEGETABLE_DETAILS
+        join:
+          joinCondition: FROM {{ ref('VEGGIES', 'VEGETABLE_DETAILS') }} "VEGETABLE_DETAILS"
+        name: RCTE_VEGETABLE_DETAILS_ANCHOR
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: |
+            where "ROOT_DEPTH_CODE" = 'S'
+        name: Recursive
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: group by "plant_name"
+        name: Final
+        noLinkRefs: []
+  name: RCTE_VEGETABLE_DETAILS
+  overrideSQL: false
+  schema: ""
+  sqlType: functionalNodes:::586
+  type: sql
+  version: 1
+type: Node
